@@ -1,0 +1,499 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@704&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+HR+Lijeva&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Sora:wght@100..800&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Cardo:400i|Rubik:400,700&display=swap");
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.container-of-home-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Use viewport height for proper scaling */
+  padding: 0;
+
+}
+/* I WANT THIS CONTANER TO BE FIXED  */
+.navbar { 
+  position: fixed;
+  width: 100%;
+  height: 5rem;
+  z-index: 10;
+}
+.navbar-collapse {
+  background-color:white;
+  width: 100vw;
+  padding-left: 1rem;
+}
+.myreference-of-nav-options {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap on small screens */
+  justify-content: space-around;
+  align-items: center;
+}
+
+main {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-top: 5rem;
+  margin-bottom: 1rem;
+  border: 1px solid black;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  flex-grow: 1;
+  overflow-y: auto;
+  position: relative;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+main::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("selected_images/Rovia-Home-Image.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  opacity: 0.7;
+  z-index: -1;
+}
+
+main p {
+  color: black;
+  font-weight: bold;
+}
+@media (max-width: 675px) {
+  main {
+    padding: 1rem; /* Add padding for better spacing */
+  }
+
+  .container-of-home-page {
+    margin: 0; /* Remove side margins on very small screens */
+  }
+}
+.company-name {
+  margin: 1rem;
+  font-family: "Open Sans", sans-serif;
+  font-size: 4rem;
+  text-align: center; /* Center align the title */
+}
+
+.company-tagline {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 1rem;
+  text-align: center; /* Center align tagline */
+}
+
+.tagline-span {
+  font-family: "Playwrite HR Lijeva", cursive;
+  font-weight: 600;
+}
+
+.company-introduction {
+  font-family: monospace;
+  margin: 1rem auto;
+  max-width: 500px; /* Limit width for readability */
+  word-wrap: break-word;
+  text-align: justify; /* Improve readability */
+}
+
+.company-highlight {
+  margin: 2rem auto;
+  max-width: 800px;
+  word-wrap: break-word;
+  font-size: 2rem;
+  font-family: "Bebas Neue", serif;
+  font-weight: 400;
+  text-align: center;
+}
+
+.call-to-action {
+  margin: 2rem auto;
+  text-align: center; /* Center align call-to-action */
+  font-family: monospace;
+}
+
+.contact-us {
+  background-color: black;
+  border: black;
+  color: white;
+}
+
+.contact-us:hover {
+  background-color: #fff;
+  border: 1px solid black;
+  color: black;
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 675px) {
+  .company-name {
+    font-size: 2.5rem;
+  }
+
+  .company-highlight,
+  .call-to-action {
+    font-size: 1rem;
+  }
+
+  .navbar-brand img {
+    width: 100px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 445px) {
+  .company-name {
+    font-size: 2rem;
+  }
+
+  .company-tagline,
+  .company-introduction {
+    font-size: 0.9rem;
+  }
+
+  .company-introduction {
+    display: none;
+  }
+
+  .myreference-of-nav-options {
+    flex-direction: column; /* Stack nav items */
+    align-items: flex-start;
+  }
+
+  .call-to-action {
+    font-size: 0.8rem;
+  }
+
+  .contact-us {
+    font-size: 0.8rem;
+    padding: 0.5rem 1rem;
+  }
+}
+
+@media (max-width: 675px) {
+
+  .company-name {
+    font-size: 2.5rem; /* Adjust text size */
+    margin: 20%;
+  }
+  
+  .company-tagline,
+  .company-highlight,
+  .call-to-action {
+    text-align: center; /* Center text for better readability */
+    font-size: 1.2rem; /* Scale text down */
+    margin: 15%;
+  }
+
+  main {
+    padding: 1rem 0; /* Add padding to reduce clutter */
+  }
+
+  .call-to-action {
+    font-size: 1rem; /* Adjust font size */
+    margin: 1rem 0;
+  }
+
+  .contact-us {
+    margin-top: 1rem; /* Add spacing above the button */
+  }
+}
+
+/* START OF THE ABOUT US SECTION  */
+
+.bento-child-title {
+  font-family: "Sora", sans-serif;
+  color: #2f3039;
+}
+
+.bento-child-description {
+  font-family: "Montserrat", sans-serif;
+  color: #7a7a7c;
+}
+
+.container-of-about-us {
+  padding: 4vw;
+  height: auto;
+    margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.bento-box {
+  height: auto;
+  display: grid;
+  grid-template-areas:
+    "one three three four"
+    "one three three four"
+    "one three three five"
+    "two three three five";
+  gap: 2vmax;
+}
+
+.bento-child {
+  padding: 2vmax;
+  background-color: #a8eeff;
+  border: 1px solid #e1e3e9;
+  border-radius: 8px;
+}
+
+.bento-child.one {
+  grid-area: one;
+}
+
+.bento-child.two {
+  grid-area: two;
+}
+
+.bento-child.three {
+  grid-area: three;
+}
+
+.bento-child.four {
+  grid-area: four;
+}
+
+.bento-child.five {
+  grid-area: five;
+}
+
+@media only screen and (max-width: 800px) {
+  .bento-box {
+    grid-template-areas:
+      "one three"
+      "one three"
+      "one three"
+      "two three"
+      "four five";
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .bento-box {
+    grid-template-areas:
+      "one one"
+      "two two"
+      "three three"
+      "four four"
+      "five five";
+  }
+}
+
+.img-container img {
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.bento-child.one {
+  padding-top: 0px;
+}
+
+.icon {
+  height: 3rem;
+  width: 3rem;
+}
+
+.icon1 {
+  margin-top: 1.5rem;
+}
+
+.bento-middle-image {
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  opacity: 0.9;
+}
+
+/* Services section start here  */
+
+.service-card-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  height: 100vh;
+  justify-items: center;
+  align-items: center;
+    margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.service-card {
+  width: 80%;
+  height: 80%;
+  perspective: 1000px;
+}
+
+.service-card-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.999s;
+}
+
+.service-card-front .service-title {
+  font-size: 1.5rem;
+  color: black;
+  font-weight: 600;
+}
+@media (min-width: 900px) {
+  .service-card-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* border: 2px solid black; */
+    height: 100vh;
+    justify-items: center;
+    align-items: center;
+  }
+
+  .service-card-front .service-title {
+    font-size: 2rem;
+    color: black;
+    font-weight: 600;
+  }
+}
+.service-card:hover .service-card-inner {
+  transform: rotateY(180deg);
+}
+
+.service-card-front,
+.service-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.service-card-front {
+  background-color: #ffffff;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  border: 2px solid #0a060a;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  justify-content: center;
+  transform: rotateY(0deg);
+}
+
+.service-card:hover {
+  cursor: pointer;
+}
+.service-card-back {
+  padding: 10px;
+  text-align: center;
+  background-color: #cab8dd;
+  color: #000000;
+  display: flex;
+  align-items: center;
+  border: 2px solid #cab8dd;
+  border-radius: 10px;
+  justify-content: center;
+  font-size: 1rem;
+  transform: rotateY(180deg);
+}
+
+.first,
+.second,
+.third,
+.fourth {
+  position: absolute;
+}
+.first::before,
+.second::before,
+.third::before,
+.fourth::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  opacity: 0.7; /* Adjust the opacity */
+  z-index: -1; /* Ensure it stays behind other content */
+}
+
+.first::before {
+  background-image: url("sample_images/conveyor.jpg"); /* Background image */
+}
+.second::before {
+  background-image: url("sample_images/robotics.jpg"); /* Background image */
+}
+.third::before {
+  background-image: url("sample_images/customisable_automation.jpg"); /* Background image */
+}
+.fourth::before {
+  background-image: url("sample_images/programming.jpg"); /* Background image */
+}
+
+@media (max-width: 690px) {
+  .service-card-back {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 530px) {
+  .service-card-back {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 370px) {
+  .service-card-back {
+    font-size: 10px;
+  }
+}
+/* form starts from here */
+
+.contact-us-form {
+  margin: 1rem;
+}
+
+/* footer starts here  */
+
+.footer {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  background-color: black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer-heading{
+  font-size: 1.5rem;
+}
+
+/* STYLES FOR THE SECTION HEADERS */
+
+.header-of-section {
+  margin-top: 1rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+}
+
+@media (min-width: 600px) {
+  .header-of-section{
+    font-size: 2rem;
+  }
+}
