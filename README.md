@@ -5,7 +5,9 @@ Frontend of a Automation Company's website.
 # Ganpati Automations: Automate your machines 🤖
 
 This website is a personal project created to showcase the capabilities of web development and design. It features a clean and modern layout with a focus on highlighting the services offered by Ganpati Automations.
-![Uploading Image_of_webpage.png…]()
+
+![Image_of_webpage](https://github.com/user-attachments/assets/01fa645c-6b45-42a7-90cb-a45047bec6d5)
+
 
 
 Key Features:
